@@ -1,12 +1,18 @@
 Source: board-overo
-Section: unknown
+Section: embedded
 Priority: extra
-Maintainer: Bill Gatliff <bgat@ptuxvm.billgatliff.com>
+Maintainer: Bill Gatliff <bgat@billgatliff.com>
 Build-Depends: debhelper (>= 8.0.0)
 Standards-Version: 3.9.3
 
 Package: board-overo
 Architecture: all
-Depends: ${misc:Depends}
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Depends:
+ u-boot-overo,
+ linux-overo,
+ firmware-overo,
+ ${misc:Depends}
+Description: Board package for Gumstix Overo COM
+ Defines the lowest-level packages required by any Gumstix Overo COM,
+ regardless of the final application.
+
