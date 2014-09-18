@@ -8,7 +8,7 @@ Standards-Version: 3.9.3
 Package: board-overo
 Architecture: all
 Depends:
- u-boot-overo,
+ u-boot-am335x,
  linux-overo,
  firmware-overo,
  ${misc:Depends}
